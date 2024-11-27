@@ -1,0 +1,190 @@
+body {
+    background: linear-gradient(to right, #1202a0, #960bab8f);
+    color: #fff; /* Optional: Set text color to white for contrast */
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.nav-item{
+    font-size:20px;
+    font-weight: bold;
+    font-family: ineria serif-Bold;
+  
+}
+.nav-item .nav-link{
+    color: rgba(6, 6, 120, 0.793);
+    margin-right: 50px;
+    padding: 5px 50px 5px 50px;
+    border-radius: 50px;
+    
+}
+.nav-link:hover{
+    /* border-bottom: 3px solid rgb(13, 79, 184); */
+    animation-name: link;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes link {
+    from {
+       background-color: transparent;
+       
+    }
+    to {
+        color: white;
+        background-color:linear-gradient(to right, #10047cee, #9219a48f);
+        box-shadow: 5px 5px  rgba(2, 2, 120, 0.853);
+
+    }
+  }
+
+.navbar-toggler{
+    background-color: white;
+}
+.navbar-toggler{
+    color: white;
+}
+.navbar{
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.174);
+  
+}
+header
+{
+    position: sticky;
+    top: 0;
+}
+.navbar-brand img{
+    border-radius: 50px;
+}
+.bar{
+    width:30px;
+    height: 5px;
+    background-color: white;
+    margin-top: 3px;
+}
+footer{
+    position: sticky;
+    width: 100%;
+    /* bottom: 0; */
+    background-color: rgb(5, 5, 58);
+}
+footer .nav-item a{
+    text-decoration: none;
+    font-size:18px;
+    font-weight: bold;
+    font-family: ineria serif-Bold;
+}
+footer .nav-item{
+    padding-top: 10px;
+}
+.description{
+    text-align: justify;
+}
+
+.wrapper{
+    width:100%;
+    background-image: url(/assets/images/bakgrd.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+}
+.index-section{
+    height:400px;
+
+}
+.form-wrapper{
+    width:30%;
+    padding: 30px;
+    height:70%;
+    background-color: rgba(3, 3, 94, 0.319);
+    border-radius: 30px;
+}
+.form-wide-wrapper{
+    width:60%;
+    padding: 30px;
+    height:70%;
+    background-color: rgba(3, 3, 94, 0.319);
+    border-radius: 30px;
+}
+input.form-control,.form-select{
+    background-color: rgba(255, 255, 255, 0) !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid white !important;
+    color: white !important;
+    height: 10px;
+    animation-name: inputs;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes inputs {
+  
+    to {
+       height: 30px;
+    }
+  }
+  .form-select{
+    font-size: 12px !important;
+    font-weight: bold;
+    text-align: center;
+    color:white !important;
+    background-color:transparent;    
+  }
+   option{
+   color: rgba(36, 36, 230, 0.895)  !important ;
+  }
+.form-label,.form-check-label{
+    font-size: 20px;
+    font-weight: bold;
+    color:white ;
+    font-family: 'Times New Roman', Times, serif;
+}
+textarea.form-control{
+    background-color: rgba(255, 255, 255, 0) !important;
+    height: 400px;
+    color: white !important;
+    height: 100px;
+}
+.submit-btn{
+    border-radius: 60px;
+    background-color: rgba(2, 2, 120, 0.853) ;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-transform: capitalize;
+    border: 4px solid #960bab8f;
+}
+.submit-large-btn{
+    border-radius: 60px;
+    background-color: rgba(2, 2, 120, 0.853) ;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-transform: capitalize;
+    border: 4px solid #960bab8f;
+}
+
+.table,.card-wrapper{
+    background-color: rgba(3, 3, 94, 0.319);
+}
+th,td{
+    color:white;
+}
+th{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+::placeholder{
+    color: white !important;
+}
+.list-group-item{
+    background-color: rgba(255, 255, 255, 0.432) !important;
+    color: white !important;
+}
+
+
+
