@@ -3,7 +3,7 @@
 <section class="wrapper">
         <div class="form-wide-wrapper mx-auto ">
           <h1 class="text-white text-center mb-3"><?= isset($isEdit)?'Edit Team':'Add Team' ?></h1>
-          <form action="" method="post">
+          <form action="" method="post" id="addTeam">
             <div class="mb-3">
               <label for="formGroupExampleInput" class="form-label">Team Name</label>
               <input type="text" class="form-control" id="formGroupExampleInput" name="team_name" value="<?= isset($isEdit)?$team_name:'' ?>">
@@ -45,7 +45,7 @@
                 </div>
             <?php endforeach; ?>
             <?php endif  ?>
-
+              <div id="membersError"></div>
             </div>
             <div class="col-md-12">
               <button type="submit" class="submit-btn">Submit</button>
@@ -53,4 +53,8 @@
           </form>
         </div>
     </section>
+  
+    <script type="module" >
+  import {Addteam} from '/assets/js/validation/form.validations.js' ;Addteam();
+</script>
 <?php $this->endSection() ?>

@@ -2,7 +2,7 @@
 <?php  $this->section('content') ?>
 <section class="wrapper">
         <div class="wrapper  container  ">
-        <a href="<?= base_url('Add-staff') ?>" class="btn btn-primary  mb-3">Add Designation</a>
+        <a href="<?= base_url('Add-staff') ?>" class="btn btn-primary  mb-3">Add Employe</a>
 
             <table class="table">
                 <thead class="text-center">

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css')  ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/font-awesome.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
 
 </head>
 <body>
@@ -86,7 +87,7 @@
   <footer>
     <div class="row">
        <section class="container col-md-3 mt-5">
-          <div>
+          <div class="container">
              <h4 class="text-white">About</h4>
              <p class="text-white description">A Task Management System is a powerful tool designed to help users efficiently organize, track, and manage their tasks and subtasks. This system enables individuals and teams to break down complex projects into manageable components, enhancing productivity and collaboration</p>
           </div>
@@ -146,7 +147,8 @@
     </div>
   </footer>
    <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
-   <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
    <script src="<?= base_url('assets/js/popper.min.js') ?>"></script>
+   <script src="<?= base_url('assets/js/jquery.validate.min.js') ?>"></script>
+
 </body>
 </html>

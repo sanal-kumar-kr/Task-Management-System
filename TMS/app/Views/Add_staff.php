@@ -3,18 +3,18 @@
 <section class="wrapper">
         <div class="form-wide-wrapper mx-auto ">
           <h1 class="text-white text-center mb-3"><?= isset($isEdit)?'Edit Employe':'Add Employe' ?></h1>
-          <form action="" method="post">
+          <form action="" method="post" id="registerForm">
             <div class="row">
                 <div class="mb-3 col-md-6">
                     <label for="formGroupExampleInput" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" name="username" value="<?= isset($isEdit)? $staff['username']:''?>">
+                    <input type="text" class="form-control" id="formGroupExampleInput1" name="username" value="<?= isset($isEdit)? $staff['username']:''?>">
                     <?php if(isset($validations)): ?>
                         <p class="text-danger">  <?=  $validations->getError('username') ?></a>
                     <?php endif ?>
                 </div>
                 <div class="mb-3 col-md-6">
                     <label for="formGroupExampleInput2" class="form-label">Email</label>
-                    <input type="emai;" class="form-control" id="formGroupExampleInput2" name="email" value="<?= isset($isEdit)? $staff['email']:''?>">
+                    <input type="email" class="form-control" id="formGroupExampleInput2" name="email" value="<?= isset($isEdit)? $staff['email']:''?>">
                     <?php if(isset($validations)): ?>
                         <p class="text-danger"><?=  $validations->getError('email') ?></a>
                     <?php endif ?>
@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="mb-3 col-md-6">
                     <label for="formGroupExampleInput" class="form-label">Contact</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" name="contact" value="<?= isset($isEdit)? $staff['contact']:''?>">
+                    <input type="text" class="form-control" id="formGroupExampleInput3" name="contact" value="<?= isset($isEdit)? $staff['contact']:''?>">
                     <?php if(isset($validations)): ?>
                         <p class="text-danger">   <?=  $validations->getError('contact') ?></p>
                     <?php endif ?>
@@ -47,7 +47,7 @@
             <div class="row">
                 <div class="mb-3 col-md-6">
                     <label for="formGroupExampleInput" class="form-label"><?= isset($isEdit)?'New Password(If want to change)':'Password' ?></label>
-                    <input type="password" class="form-control" id="formGroupExampleInput" name="password">
+                    <input type="password" class="form-control" id="formGroupExampleInput4" name="password">
                     <?php if(isset($validations)): ?>
                     <p class="text-danger"><?=  $validations->getError('password') ?></p>
                     <?php endif ?>
@@ -59,4 +59,7 @@
           </form>
          </div>
 </section>
+<script type="module" >
+  import {Addstaff} from '/assets/js/validation/form.validations.js' ;Addstaff();
+</script>
 <?php $this->endSection() ?>

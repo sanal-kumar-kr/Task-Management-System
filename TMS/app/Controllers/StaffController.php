@@ -16,12 +16,11 @@ class StaffController extends BaseController
             $userModel=new userModel();
             $designationModel=new DesignationModel();
             $data['designationsList']=$designationModel->findAll();
-
             if($this->request->getMethod() == "POST"){
                 $rules = [
                     'username' => 'required|min_length[5]|max_length[15]|is_unique[users.username]',
                     'email' => 'required|min_length[10]|max_length[20]|valid_email|is_unique[users.email]',
-                    'contact' => 'required|min_length[10]|max_length[10]|is_unique[users.contact]',
+                    'contact' => 'required|min_length[10]|max_length[10]|is_unique[users.contact]|numeric',
                     'designation' => 'required',
                     'password' => [
                         'label' => 'Password',

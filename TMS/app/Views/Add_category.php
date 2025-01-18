@@ -3,7 +3,7 @@
 <section class="wrapper">
     <div class="form-wrapper mx-auto ">
         <h1 class="text-white text-center mb-3">Add Category</h1>
-        <form action="" method="post">
+        <form action="" method="post" id="addCategory">
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Category</label>
             <input type="text" class="form-control" id="formGroupExampleInput" name="title" >
@@ -17,4 +17,7 @@
         </form>
     </div>
 </section>
+<script type="module" >
+  import {Addcategory} from '/assets/js/validation/form.validations.js' ;Addcategory();
+</script>
 <?php $this->endSection() ?>

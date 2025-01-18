@@ -44,7 +44,6 @@
                 <div class=" mb-3 col-md-6 mt-5">
                         <label for="formFile" class="form-label">Related</label>
                         <input class="form-control" type="file" id="formFile" multiple="multiple" name="files[]">
-                     
                 </div>
         </div>
         <?php if(isset($isEdit)): ?>
